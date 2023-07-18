@@ -4,28 +4,30 @@ body {
   width: 100%;
 }
 
-.container {
+.top-left-container {
   top: 3%;
-  left: 40%;
   display: flex;
-  margin-left: 200px;
   align-items: center;
-  margin-top: 100px;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  padding-left: 500px;
+  margin-top: 50px;
+  justify-content: start;
+  max-width: max-content;
 }
 
 .google {
-  height: 30px;
-  width: 90px;
+  height: 40px;
+  width: 100px;
   padding: 30px;
   margin-left: 50px;
+  margin-top: 10px;
 }
 
 .mic,
 .magnify,
 .line,
-.letter {
+.letter,
+.dots,
+.camera {
   height: 28px;
   float: right;
   margin-top: 5px;
@@ -33,17 +35,12 @@ body {
 }
 
 .letter,
-.magnify {
-  width: 18px;
-  height: 18px;
-}
-
-.letter,
 .line {
   margin-right: 5px;
 }
 
-.letter, .magnify {
+.letter,
+.magnify {
   height: 18px;
   width: 18px;
   padding-top: 5px;
@@ -51,13 +48,19 @@ body {
 
 .search-box {
   border-radius: 50px;
+  box-shadow: 1px 1px lightgray;
   background: white;
   border: 1px solid lightgray;
+}
+.dots,
+.camera {
+  float: right;
+  padding-bottom: 13px;
 }
 
 form {
   margin: 0;
-  width: 500px;
+  width: 700px;
   margin-left: 10px;
 }
 
@@ -65,4 +68,99 @@ input {
   border: none;
   margin: 10px 5px 10px 0px;
   font-size: 16px;
+}
+
+.top-right-container {
+  display: flex;
+  padding-left: 400px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+section {
+  padding-left: 350px;
+}
+
+.options-container {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-nav {
+  display: flex;
+  padding-left: 700px;
+  padding-right: 500px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.blue-glass,
+.paper,
+.image,
+.play,
+.tag,
+.three-dots {
+  height: 18px;
+  width: 18px;
+  padding: 5px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-two {
+  display: flex;
+}
+
+hr {
+  border-width: 0.1px;
+  border-color: lightgray transparent;
+}
+
+.group-one {
+  text-align: center;
+  padding: 10px;
+}
+
+.firstTwo-results {
+  text-align: center;
+  margin-right: 145px;
+  padding-top: 2px;
+  font-size: 12px;
+  color: gray;
+  font-weight: lighter;
+}
+
+h2 {
+    word-spacing: 2px;
+}
+
+.linkHeader{
+  margin-right: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.info {
+
+    margin-right: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 41px;
 }
